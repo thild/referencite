@@ -12,5 +12,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial version.
 - Import references and citations from [Zotero](https://www.zotero.org/) using Zotero Picker, provided by the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension.
 
-[Unreleased]: https://github.com/thild/referencite/compare/v0.0.2...HEAD
+[Unreleased]: https://github.com/thild/referencite/compare/release-0.0.2...HEAD
 [0.0.1]: https://github.com/thild/referencite/releases/tag/v0.0.1
