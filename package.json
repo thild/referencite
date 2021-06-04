@@ -1,0 +1,128 @@
+{
+    "name": "referencite",
+    "displayName": "ReferenCite",
+    "description": "Import references, citations and bibliographies into VS Code",
+    "version": "0.0.1",
+    "publisher": "Tony Alexander Hild",
+    "author": {
+        "name": "Tony Alexander Hild",
+        "email": "tony@hild.com.br",
+        "url": "https://github.com/thild"
+    },
+    "homepage": "https://github.com/thild/referencite",
+    "bugs": {
+        "url": "https://github.com/thild/referencite/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thild/referencite.git"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "reference",
+        "bibliography",
+        "citation",
+        "latex",
+        "bibtex",
+        "biblatex",
+        "zotero",
+        "better bibtex"
+    ],
+    "activationEvents": [
+        "onCommand:referenCite/zoteroPicker",
+        "onCommand:referenCite/zoteroBibtex",
+        "onCommand:referenCite/zoteroBiblatex",
+        "onCommand:referenCite/zoteroNatib",
+        "onCommand:referenCite/zoteroPandoc"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "referenCite/zoteroPicker",
+                "title": "ReferenCite: Zotero Picker"
+            },
+            {
+                "command": "referenCite/zoteroBibtex",
+                "title": "ReferenCite: Zotero Picker / BibTeX"
+            },
+            {
+                "command": "referenCite/zoteroNatib",
+                "title": "ReferenCite: Zotero Picker / natbib"
+            },
+            {
+                "command": "referenCite/zoteroBiblatex",
+                "title": "ReferenCite: Zotero Picker / BibLaTeX"
+            },
+            {
+                "command": "referenCite/zoteroPandoc",
+                "title": "ReferenCite: Zotero Picker / Pandoc"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "referenCite/zoteroPicker",
+                "key": "Ctrl+Shift+A Ctrl+Shift+Z"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "ReferenCite",
+            "properties": {
+                "referenCite.betterBibtexCaywUrl": {
+                    "type": "string",
+                    "default": "http://127.0.0.1:23119/better-bibtex/cayw",
+                    "description": "Zotero Better BibTeX Cite as you Write (CAYW) URL."
+                },
+                "referenCite.referencesManager": {
+                    "type": "string",
+                    "enum": [
+                        "zotero"
+                    ],
+                    "default": "zotero",
+                    "description": "Reference manager from which content will be imported."
+                },
+                "referenCite.bibtexFile": {
+                    "type": "string",
+                    "default": "references.bib",
+                    "description": "BibTeX Bibliography default file."
+                },
+                "referenCite.importingContentType": {
+                    "type": "string",
+                    "enum": [
+                        "bibtex",
+                        "natbib",
+                        "biblatex",
+                        "pandoc"
+                    ],
+                    "default": "bibtex",
+                    "description": "Importing content type."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint . --ext .ts,.tsx",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.0",
+        "@types/vscode": "^1.37.0",
+        "@typescript-eslint/eslint-plugin": "^4.16.0",
+        "@typescript-eslint/parser": "^4.16.0",
+        "eslint": "^7.21.0",
+        "typescript": "^4.2.2"
+    },
+    "dependencies": {
+        "@types/node-fetch": "2.5.10",
+        "node-fetch": "2.6.1"
+    }
+}
