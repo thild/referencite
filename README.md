@@ -1,4 +1,4 @@
-![Screenshot](images/icon.png)
+[![Screenshot](docs/images/icon.png)](https://thild.github.io/referencite/)
 
 # Citations and references importer
 
@@ -16,7 +16,7 @@ This extension adds support for importing bibliographic references and citations
 
 You can set the default import content type by setting the `importingContentType` configuration option. For example, if you choose the `bibtex` content type, the reference is appended to a BibTeX file set in the `bibtexFile` option. The other citation content types are included directly in the current document selection.
 
-![Screenshot](images/screenshot.png)
+![Screenshot](docs/images/screenshot.png)
 
 ## Dependencies
 
