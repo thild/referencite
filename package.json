@@ -7,9 +7,9 @@
     "author": {
         "name": "Tony Alexander Hild",
         "email": "tony@hild.com.br",
-        "url": "https://github.com/thild"
+        "url": "https://thild.github.io"
     },
-    "homepage": "https://github.com/thild/referencite",
+    "homepage": "https://thild.github.io/referencite/",
     "bugs": {
         "url": "https://github.com/thild/referencite/issues"
     },
@@ -17,7 +17,7 @@
         "type": "git",
         "url": "https://github.com/thild/referencite.git"
     },
-    "icon": "images/icon.png",
+    "icon": "docs/images/icon.png",
     "engines": {
         "vscode": "^1.37.0"
     },
