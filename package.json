@@ -2,7 +2,7 @@
     "name": "referencite",
     "displayName": "ReferenCite",
     "description": "Import references, citations and bibliographies into VS Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "thild",
     "author": {
         "name": "Tony Alexander Hild",
