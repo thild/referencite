@@ -1,4 +1,4 @@
-![Screenshot](../images/icon.png)
+![Screenshot](images/icon.png)
 
 # Citations and references importer
 
@@ -16,8 +16,11 @@ This extension adds support for importing bibliographic references and citations
 
 You can set the default import content type by setting the `importingContentType` configuration option. For example, if you choose the `bibtex` content type, the reference is appended to a BibTeX file set in the `bibtexFile` option. The other citation content types are included directly in the current document selection.
 
-![Screenshot](../images/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 ## Dependencies
 
 This extension acts as a proxy for other reference managers. Unfortunately, we currently only support [Zotero](https://www.zotero.org/). Therefore, you need to ensure Zotero is running and the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension installed.
+
+## License
+[MIT](../LICENSE.md)
