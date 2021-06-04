@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+![Screenshot](../images/icon.png)
 
-You can use the [editor on GitHub](https://github.com/thild/referencite/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+# Citations and references importer
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This extension adds support for importing bibliographic references and citations directly from reference managers (currently, only [Zotero](https://www.zotero.org/) is supported).
 
-### Markdown
+## Features
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Import of references and citations using Zotero Picker, provided by the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension.
+- (Planned) Adding support for other reference managers.
 
-```markdown
-Syntax highlighted code block
+## How to use
 
-# Header 1
-## Header 2
-### Header 3
+- Ctrl+Shift+P (Command Pallete): search for ReferenCite.
+- Ctrl+Shift+A Ctrl+Shift+Z (keyboard shortcut): will open the Zotero Picker provided by the Better BibTeX extension.
 
-- Bulleted
-- List
+You can set the default import content type by setting the `importingContentType` configuration option. For example, if you choose the `bibtex` content type, the reference is appended to a BibTeX file set in the `bibtexFile` option. The other citation content types are included directly in the current document selection.
 
-1. Numbered
-2. List
+![Screenshot](../images/screenshot.png)
 
-**Bold** and _Italic_ and `Code` text
+## Dependencies
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thild/referencite/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This extension acts as a proxy for other reference managers. Unfortunately, we currently only support [Zotero](https://www.zotero.org/). Therefore, you need to ensure Zotero is running and the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension installed.
